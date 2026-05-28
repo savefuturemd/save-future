@@ -1,0 +1,389 @@
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- BODY (оставляем твой фон из 1 кода) --- */
+body {
+    background-image: linear-gradient(rgba(63, 84, 64, 0.5), rgba(60, 71, 60, 0.5)), url('https://wp-media.petersons.com/blog/wp-content/uploads/2019/07/11154102/iStock-1145183123.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #D6E8D0;
+
+    font-family: 'Comfortaa', sans-serif;
+    color: #2F4822;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8CA87A;
+    padding: 10px 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-container {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.logo-text .light {
+    color: #E2EFE0;
+}
+
+.logo-text .dark {
+    color: #26381C;
+}
+
+.bear-container {
+    width: 35px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- MENU --- */
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1E3014;
+    font-size: 21px;
+}
+
+.nav-links a:hover {
+    color: #FFF;
+}
+
+.menu-hamburger {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.brand-word {
+    font-family: 'Platypi', serif;
+    font-size: 65px;
+    color: #e0ffd8;
+    letter-spacing: 6px;
+    text-align: center;
+    
+}
+
+/* --- WELCOME --- */
+.welcome-card {
+    background-color: #79B381;
+    padding: 25px 20px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 500px;
+    margin: 30px 0;
+}
+
+/* --- BUTTONS --- */
+.buttons-group {
+    display: flex;
+    gap: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.btn {
+    flex: 1;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-green {
+    background-color: #7DAF7A;
+}
+
+.btn-blue {
+    background-color: #9BB8C4;
+}
+
+/* ================= BLOG ================= */
+
+/* Отступ сверху чтобы не лип к hero */
+.container {
+    width: 96%;
+    max-width: 1700px;
+    margin: 100px auto;
+}
+.content-wrapper {
+    margin-bottom: 200px;
+}
+
+/* layout */
+.main-layout {
+    display: flex;
+    gap: 30px;
+}
+
+/* LEFT */
+.left-column {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-title {
+    background: #cbecc2;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+    background: #cbecc2;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.label {
+    background: #eef5e5;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* RIGHT */
+.right-column {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.side-box {
+    background: #cbecc2;
+    border-radius: 25px;
+    padding: 30px;
+   
+}
+.side-box p {
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+            flex-grow: 1;
+            text-align: justify
+        }
+
+.card p {
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+            flex-grow: 1;
+            text-align: justify
+        }
+
+.welcome-card p {
+            flex-grow: 1;
+            text-align: justify
+        }
+
+.side-box h2,
+.events h3 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    
+}
+
+.event {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 30px;
+}
+/* ===== BLOG BACKGROUND ===== */
+.blog-section {
+    background-color: #e3f1de;
+    padding: 10px 0 40px 0; /* больше сверху, меньше снизу */
+    margin-bottom: 0;
+}
+
+/* ================= FOOTER ================= */
+
+        .site-footer {
+            background-color: #658354; 
+            color: white;
+            margin-top: 60px;
+            padding-top: 60px;
+            font-family: Arial, sans-serif;
+            width: 100%;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-icon {
+            background-color: #95bb72;
+            padding: 5px 8px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #e2f0d9; 
+        }
+
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .footer-column ul li a {
+            color: #e2f0d9;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-column ul li a:hover {
+            color: #ddead1;
+            text-decoration: underline;
+        }
+
+        .contact-info-list li {
+            color: #e2f0d9;
+        }
+
+        .footer-bottom {
+            margin-top: 40px;
+            border-top: 1px solid rgba(14, 9, 9, 0.15);
+            padding: 20px 0;
+            font-size: 15px;
+            color: #e2f0d9;
+        }
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-word {
+        font-size: 45px;
+    }
+    .buttons-group {
+        flex-direction: column;
+    }
+}
